@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>first</title>
+    <link rel="stylesheet" href="stream_set.css">
+    <!-- Boxicons CDN link-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-detail">
+            <i class='bx bxs-invader bx-tada'></i>
+            <span class="logo_name">JieChen</span>
+        </div>
+
+        <ul class="nav-link">
+            <li>
+                <a href="http://game.granbluefantasy.jp/#quest/index" target="_blank">
+                    <i class='bx bx-game'></i>
+                    <span class="link_name">GBF</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="http://game.granbluefantasy.jp/#quest/index" target="_blank">GBF</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!--li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-collection bx-flip-horizontal'></i>
+                        <span class="link_name">Category</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link_name" href="#">Category</a></li>
+                    <li>
+                        <a href="https://www.twitch.tv/" target="_blank"><i class='bx bxl-twitch'></i>Twitch</a></li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i>Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://music.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i>Music</a>
+                    </li>
+                </ul>
+            </li-->
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-play'></i>
+                        <span class="link_name">Player</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Player</a></li>
+                    <li>
+                        <a href="https://www.twitch.tv/" target="_blank"><i class='bx bxl-twitch'></i>Twitch</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i>Youtube</a>
+                    </li>
+                    <li>
+                        <a href="https://music.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i>Music</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-book-open'></i>
+                        <span class="link_name">book</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Category</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Logic Design</a></li>
+                    <li><a href="#">Card Design</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://twitter.com/?lang=zh-Hant" target="_blank">
+                    <i class='bx bxl-twitter'></i>
+                    <span class="link_name">Twitter</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="https://twitter.com/?lang=zh-Hant" target="_blank">Twitter</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class='bx bxl-instagram'></i>
+                    <span class="link_name">IG</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="https://www.instagram.com/" target="_blank">IG</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="https://www.google.com.tw/maps/@23.546162,120.6402133,8z?hl=zh-TW" target="_blank">
+                    <i class='bx bx-map-alt'></i>
+                    <span class="link_name">Map</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="https://www.google.com.tw/maps/@23.546162,120.6402133,8z?hl=zh-TW" target="_blank">Map</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-detail">
+                    <div class="profile-content">
+                        <img src="a.png" alt="profile">
+                    </div>
+
+                    <div class="nanme-job">
+                        <div class=profile_name>JieChen</div>
+                        <div class=job>WebTest</div>
+                    </div>
+                    <i class='bx bx-log-in'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">View</span>
+        </div>
+    </section>
+
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+
+                let arrowParent = e.target.parentElement.parentElement;
+
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close")
+        });
+
+    </script>
+
+</body>
+
+
+</html>
+
+
